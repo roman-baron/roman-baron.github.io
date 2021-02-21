@@ -1,0 +1,8 @@
+@font-face{font-family: 'Roboto', sans-serif;
+src:url('./font/roboto.ttf')}
+     
+@font-face{font-family: 'Montserrat', sans-serif;
+       src: url('../style/font/Montserrat-Bold.ttf')}
+
+@font-face{font-family: 'Montserrat', sans-serif;
+    src: url('../style/font/Montserrat-Regular.ttf')}

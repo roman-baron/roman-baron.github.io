@@ -1,20 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300&display=swap");
-* {
-  margin: 0;
+* { margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
+          box-sizing: border-box;}
 
-body {
-  background: #F2F2F2;
-}
+
+body { background: #F2F2F2;}
+
 
 .content {
   width: 1440px;
   height: 3451px;
-  margin: 0 auto;
-}
+  margin: 0 auto;}
+
 
 .header {
   width: 100%;
@@ -584,8 +582,7 @@ body {
   line-height: 27px;
   text-align: center;
   background-image: url(./style/images/Dreamshare.png);
-  background-position: 1188px 1576px;
-  border: 1px solid #000;
+  background-position: 1188px 1576px; 
   color: #F2F2F2;
 }
 
