@@ -1,0 +1,646 @@
+@import 'base/base';
+@import 'base/mixin';
+@import 'base/viriables';
+
+body{ background: #F2F2F2;}
+
+.content{width: 1440px;
+    height: 3451px;
+    // border: 1px solid #000;
+    margin: 0 auto;    
+    }
+
+    .header {
+        width: 100%;
+        height: 700px;
+        background-image: url(./style/images/Dreamshare.png);        
+        margin-bottom: 95px;
+        color:$img-color; 
+        @include flex;
+        justify-content: flex-start;
+
+      
+        &__logo{width: 63%;
+                height: 36px;
+                margin-top: 40px; 
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: center;
+
+           
+           
+              &_logo{width: 17%;
+                height: 36px;
+                font-family: 'Montserrat';
+                 font: {size: 20px;               
+                        weight: 700;}
+                 line-height: 36px;
+                 text-align: center; }          
+              
+
+              
+            &__log-in{width: 17%; 
+                     height: 36px;
+                     margin-left:596px ;
+                     display: flex;
+                     flex-direction: row;
+                     flex-wrap: wrap;
+                    justify-content: space-between;           
+            
+           
+            &_log{width: 29%;
+                      height: 36px;
+                      @include name;
+                      font-weight: 400;
+                      line-height: 36px;
+                   }
+                    
+             &_sing {width: 58%;
+                   height: 36px;
+                   border-radius: 40px;
+                   border: 1px solid $img-color; 
+                   @include name;
+                   font-weight: 400;
+                   line-height: 36px;               
+                   } }                    
+              
+              }  
+              
+                         
+        &_txt{width: 34%;
+              height: 126px;
+              margin-top: 154px;
+              font: {family: 'Montserrat';
+               size: 52px;             
+               weight: 700;}
+               line-height: 63px;               
+               text-align: center;}
+       &_txt1{  width: 28%;
+                height: 25px;
+                margin-top: 28.5px;
+              @include text;
+              font-size: 24px;
+              line-height: 24px;
+              }
+       &_txt2{ width: 16%;
+               height: 40px;
+               margin-top: 33px;
+               border-radius: 40px;
+               @include name;
+               line-height: 40px;
+
+               background-color:$botton-color ; }       
+        
+      }
+      
+  .section1 {
+        width: 65%;
+        height: 13%;
+        margin: 95px auto; }       
+      
+       .how {width:37%;
+             @include txt-bold;
+            margin-bottom: 35px} 
+
+        .blc {height: 300px;
+              @include block;
+              
+          &__right{ width: 84%;
+                height: 156px;;
+                   margin: 0 auto;
+                   margin-top:224px;                   
+          &_step {@include step;
+                margin-bottom: 18px; }
+          &_txt{ width: 84%;
+                height: 58px;
+                margin-bottom: 10px;
+                font: {family: 'Montserrat';                         
+                weight: bold;
+                size: 24px;}
+                line-height: 26px; 
+               color:$img-color }
+          &_txt1{
+             width: 84%;
+             height: 57px;
+             @include text;
+            text-align: left;
+            color:$img-color ;
+             }
+                  }  
+          &__center{ width: 84%;height: 129px;
+                    margin: 0 auto;
+                    margin-top:255px;                   
+                    &_step {@include step;
+                          margin-bottom: 18px; }
+                    &_txt{ width: 84%;
+                          height: 29px;
+                          margin-bottom: 17px;
+                          font: {family: 'Montserrat';                         
+                          weight: bold;
+                          size: 24px;}
+                          line-height: 26px; 
+                         color:$img-color }
+                     &_txt1{
+                       width: 84%;
+                       height: 14px;
+                       @include text;
+                      text-align: left;
+                      color:$img-color ;
+                       }
+                   }          
+          &__step {width: 32%; height: 400px;}             
+                    
+          &_step1 {background: {image: url(./style/images/Dreamshare.png);
+                                position: 22% -311%;  }}
+          &_step2 {background: {image: url(./style/images/Dreamshare.png);
+                                position: 50% -311%; }}
+          &_step3 {background: {image: url(./style/images/Dreamshare.png);
+                                 position: 78% -311%;}}}       
+        
+        
+      
+  .section2 {
+        width: 65%;
+        height: 361px;
+        margin: 0 auto;
+        margin-bottom: 102px;        
+        background: {image: linear-gradient(to right, $botton-color 1px, transparent 1px),
+                     linear-gradient(to bottom, $botton-color 1px, transparent 1px); 
+                     size: 10px 10px;}}
+      
+        .meet { width:53%;
+             @include txt-bold;
+            margin-bottom: 35px;}
+
+       .blc{ height: 57%;                 
+             @include block ; display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              align-content: space-between; 
+           &__person{  width: 221px;
+                      height: 100%;              
+                      @include flex;
+                      position: relative;
+               &_bl1-1{ height: 58%;
+                        width: 54%;
+                      background: {image: url(./style/images/Dreamshare.png);                                       
+                                    position: 1138px 2037px;}
+                      border-radius: 50px 50px;}
+                &_bl1-1::after{ 
+                            @include after;
+                            background-color: $botton-color;
+                            background: {image: url(./style/images/music.svg);
+                                      size:75% ;
+                                      repeat: no-repeat;
+                                      position:  center;}
+                            }   
+               &_bl1-2{ height: 54%;
+                 width: 54%;
+               background: {image: url(./style/images/Dreamshare.png);                                       
+                           position: 899px 2037px;}
+               border-radius: 50px 50px;}
+              
+               &_bl1-2::after{ 
+                     @include after;
+               
+                background: {image: url(./style/images/pen.svg);
+                  color: #19D4CA;
+                  size:75% ;
+                  repeat: no-repeat;
+                  position:  center;}
+                }   
+               
+               &_bl1-3{ height: 54%;
+                        width: 54%;
+               background: {image: url(./style/images/Dreamshare.png);                                       
+                           position: 659px 2037px;}
+               border-radius: 50px 50px;}
+
+               &_bl1-3::after{ @include after;
+                  background: {image: url(./style/images/camera.svg);
+                  color: #FFA710;                 
+                  size:75% ;
+                  repeat: no-repeat;
+                  position:  center;
+                }
+               }  
+               
+               &_bl1-4{ height: 54%;
+                        width: 54%;
+               background: {image: url(./style/images/Dreamshare.png);                                       
+                           position: 420px 2037px;}
+                           border-radius: 50px 50px;}
+               &_bl1-4::after{ @include after;
+                background: {image: url(./style/images/plane-departure.svg);
+                color: #667DF3;
+                size:75% ;
+                repeat: no-repeat;
+                position:  center;}
+              }  
+
+
+               &_bl2{height: 18px;
+                    width:100%;
+                     @include name;}
+                     
+                    
+               
+                
+                &_bl3{width: 100%;
+                  height: 38px;
+                      @include text
+                    }}}
+       .othe-partner{  width: 180px;
+                      height: 40px;                     
+                      margin: 0 auto;
+                      margin-top: 36px;
+                      border-radius: 40px;
+                      border: 2px solid $botton-color;
+                      @include name;                    
+                      color:$botton-color ;
+                      line-height: 40px;
+                    }          
+                   
+      
+       
+      .section3 {
+                   width: 65%;
+                   height: 1031px;
+                   margin: 0 auto;
+                   margin-bottom: 88px;
+                   // background-color: #2222c6;
+                   display: flex;
+                   flex-direction: row;
+                   flex-wrap: wrap;
+                   justify-content: space-between;
+                   align-content: space-between;}
+                  
+             .discover{width: 45%;
+                       @include txt-bold;
+                       margin-bottom: 4%;}
+                    
+            
+              .img {width: 100%;height: 94%;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-content: space-between;
+
+        &_sport{@include img1;
+        background-image: url(./style/images/Dreamshare.png);
+        background-position: 1188px 1576px;
+        border: 1px solid #000;
+        color: $img-color;}
+             
+        &_wellness{ @include img1;
+        background-image: url(./style/images/Dreamshare.png);
+        background-position: 867px 1576px;
+        color: $img-color;
+       }
+       &_exreme { @include img1;
+        background-image: url(./style/images/Dreamshare.png);
+        background-position: 550px 1576px;
+        color: $img-color;
+         }
+       &_games{ @include img1;
+        background-image: url(./style/images/Dreamshare.png);
+        background-position: 1190px 1246px;
+          color: $img-color;}
+       &_culture{ @include img2;
+        background-image: url(./style/images/Dreamshare.png);
+        background-position: 868px 1246px;
+          // background-size: 100% ;
+          color: $img-color;}
+        &_relax{ @include img2;
+        background-image: url(./style/images/Dreamshare.png);
+        background-position: 1191px 913px;
+            // background-size: 100%;
+            color: $img-color;}
+        &_trevelling{ @include img1;
+        background-image: url(./style/images/Dreamshare.png);
+        background-position: 550px 913px;
+            // background-size: 100%;
+            color: $img-color; }}
+      
+  .section4 {
+        width: 33%;
+        height: 158px;
+        margin: 0 auto;
+        margin-bottom: 100px;}
+       
+       
+      .holiday{width: 76%;
+        line-height: 32px;
+        @include txt-bold;
+        margin-bottom: 43px; }
+
+      .interes{ width: 88%;height: 24px;
+               @include text;
+               font-size: 18px;
+              margin: auto;
+            margin-bottom: 19px; }
+
+      .form{width: 482px;
+            height: 40px ;
+
+        &_type{ width: 62%;
+                height: 40px;  
+                float: left;}
+              
+        &_botton{width: 36%;height: 100%;
+                 @include name;
+                border-radius: $border;
+                float: left;
+                background: $botton-color;
+                color:  $img-color;
+                line-height: 40px;}}
+ 
+ .footer{width: 1440px;
+          height: 224px;
+          border-top:2px solid $botton-color;}  
+       
+   
+      .compani{width: 65%;
+               height: 224px;
+              margin: 0 auto;
+              display: flex;
+              flex-direction: row;
+              justify-content: flex-start;
+              &__logo{ width:119px; height:20px; margin-top: 38px;
+                 color: $botton-color;} 
+              &__comp {width: 114px;height: 184px;
+                margin-top: 38px;
+                margin-left: 120px; 
+                 &__compan{ width: 70px;
+                      height:  17px; 
+                      margin-top: 11px;                    
+                      @include name}
+                      &_ul {width: 114px;
+                      height:  156px; 
+                      margin-top: 11px;}
+                      &_li{ @include text;
+                        text-align: left;
+                        line-height: 26px;}} 
+
+             &__partner{ width: 64px;height: 17px;
+                       margin-top: 40px;
+                       margin-left: 169px;
+                       @include name ;}}
+
+          .right {width: 110px;
+                  height: 43px;
+                  margin-top: 40px;
+                  margin-left: 317px;
+
+              &_designet { width: 89px;
+                         height: 12px;                         
+                         font: {family: 'Montserrat';
+                                size: 10px;
+                                weight: 700;}
+                          margin: 0 auto;
+                         line-height: 12px;
+                         letter-spacing: 1px;
+                         text-align: center ;  }
+                        
+
+              &_des { width: 110px;
+                   height: 34px;
+                  background: {image: url(./style/images/Dreamshare.png);
+                               position: -1080px -3247px;}
+                                   }}
+
+
+
+@media (max-width: 992px)
+{ .content{ width: 768px; height: 3679px; }
+  .header{height: 700px;
+    background-image: url(./style/images/Tablet.png);}
+          .header__logo {
+            width: 88%;}
+           .header__logo_logo {
+              width: 22%;}
+           .header__logo__log-in {
+                margin-left: 365px;
+                width: 23%;}
+          .header_txt {
+                  width: 62%;}
+           .header_txt1 {
+                    width: 52%;}
+            .header_txt2 {
+              width: 29%;}
+ .section1 {width: 98%;}
+         .how { width: 39%;
+                 height: 27px;
+                 font-size: 22px;}
+  .section2 {height: 605px;
+                    background-image: none;}
+         .meet { width: 84%;
+                font-size: 22px;}
+          .blc { height: 77%;}
+          .blc__person_bl1-1, .blc__person_bl1-2,.blc__person_bl1-3,.blc__person_bl1-4 {
+            height: 59%;
+            width: 51%;}
+           .blc__person { width: 236px;          
+                          height: 44%;}
+         
+  .section3 { width: 98%;}  
+         .discover { width: 47%; 
+                   font-size: 22px; }                 
+        .img_sport,.img_wellness,.img_exreme,.img_games,.img_trevelling {width: 236px;}    
+         .img_culture, .img_relax {width: 492px;}
+         .section4 {width: 63%;}
+        
+  .footer {width: 768px;}
+         .compani {
+          width: 90%;}
+          .compani__comp {margin-left: 120px;}
+          .compani__partner {margin-left: 56px;}
+          .right {margin-left: 116px;}
+        }
+        
+
+
+
+@media (max-width: 768px)
+  { .content{ width: 320px; height: 3916px; }
+  .header {width: 320px;
+    height: 540px;
+    background-image: url(./style/images/Mobile_Portrait.png);
+    background-position: -6px 0;
+    margin-bottom: 35px;}
+
+ .header__logo {
+      width: 48%;}
+
+      .header__logo_logo {
+     display: none};
+
+     .header__logo__log-in {
+      margin-left: 0px;
+      width: 100%;}
+
+      .header_txt {
+        width: 85%;
+        height: 74px;
+        font-size: 30px;}
+
+        .header_txt {
+          width: 85%;
+          height: 74px;
+          font-size: 30px;
+          line-height: 36px;}
+
+          .header_txt1 {
+            width: 88%;
+            height: 49px;
+            font-size: 18px;
+            margin-top: 5.5px;
+            line-height: 24px;}
+        
+            .header_txt2 {
+              width: 88%;
+              margin-top: 15px;}
+
+ .section1 {
+            width: 300px;
+            height: 781px;
+            margin: 35px auto;}
+
+              
+                .how {
+                  width: 100%;
+                  line-height: 32px;
+                  margin-bottom: 5px;}
+                  
+
+       .blc_step1 {background-position: 22% -295%;}
+
+                .blc_step2 {background-position: 50% -295%}
+
+                 .blc_step3 {background-position: 78% -295%}
+
+                  .blc__right {margin-top: 69px;}
+                  .blc__step {
+                    width: 100%;
+                    height: 240px;
+                  margin-top: 10px;}
+
+                  .blc__center {                   
+                    margin-top: 95px;}
+
+                    .section2 {
+                      height: 1270px;                      
+                      width: 94%;                       
+                        background-image: none;
+                        margin-bottom: 0px;}
+
+    .meet {height: 54px;
+                      width: 93%;
+                     text-align: center;}
+     
+              .blc__person {height: 22%;
+                          margin: 0 auto;}
+
+            .blc__person_bl1-1, .blc__person_bl1-2, .blc__person_bl1-3, .blc__person_bl1-4 {
+              height: 56%;
+              width: 51%;}
+             
+              .discover { width: 89%;
+                          height: 54px;             
+                          line-height: 26px;
+                          text-align: center;}
+
+              .img{justify-content: center;}
+             .img_sport, .img_wellness, .img_exreme, .img_games, .img_trevelling {                 
+                    width: 300px;
+                    height: 120px;
+                  background-image: url(./style/images/Mobile_Portrait.png);}
+                  .img_sport{ background-position: 51% 1392px;}   
+                  .img_wellness {    background-position: 51% 1263px;} 
+                  .img_exreme{ background-position: 51% 1129px;;} 
+                  .img_games{ background-position: 51% 1005px;} 
+                  .img_culture{background-position: 51% 870px;}
+                  .img_relax {background-position: 51% 745px;}
+                  .img_trevelling{ background-position: 51% 604px;} 
+
+              .img_culture, .img_relax { width: 300px;
+                                         height:120px;
+                                         background-image: url(./style/images/Mobile_Portrait.png)}
+
+   .section3 { margin-bottom: 35px;}
+
+   .section4 {  width: 88%;
+               height: 192px;
+               margin-bottom: 40px;}
+
+                .holiday {
+                  width: 68%;
+                  font-size: 22px;
+                  line-height: 26px;
+                  height: 54px;
+                  margin-bottom: 9px;
+                  text-align: center;}
+                  .interes {
+                    width: 100%;
+                    margin-bottom: 15px;}
+                  
+                  .form {
+                    width: 280px;
+                    height: 40px;
+                    margin: 0 auto;}
+                  
+                  .form_type {
+                    width: 100%;}
+
+                  .form_botton {
+                      width: 100%;}
+
+               .footer {
+                 width: 321px;
+                 height: 204px;}
+
+                 .compani__logo {                                
+                   margin-top: 21px;
+                   font-size: 16px;
+                   line-height: 20px;}
+
+                 .compani{flex-direction: column;
+                          align-items: center;}
+                             
+                 .compani__comp {
+                  width: 280px;height: 70px;
+                    margin:0 auto;
+                    margin-top: 13px;}
+
+                  .compani__comp__compan {
+                    margin:0 auto;}
+
+                  .compani__comp_ul {
+                   width: 260px;
+                   height: 52px;
+                   margin-top: 1px;
+                   margin-left: 0;
+                   display: flex;
+                   flex-wrap: wrap;
+                   flex-direction: row;
+                   justify-content:space-around;
+                   align-items: center;}
+                    
+                           
+                 .compani__comp_li{display: flex;}
+                           
+                           
+                 .compani__partner {margin: 6px auto;}
+
+                .right {margin-left: 0px;
+                        margin: 14px auto;}        
+
+}
+
+
+
+
