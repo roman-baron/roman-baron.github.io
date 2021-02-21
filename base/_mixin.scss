@@ -1,0 +1,87 @@
+@mixin txt-bold {
+             height: 32px;            
+             margin: 0 auto;
+             font-family: 'Montserrat';
+             font-size: 26px;
+             font-style: normal;
+             font-weight: 700;
+             line-height: 32px;
+             letter-spacing: 0px;             
+             } 
+
+   @mixin block {width: 100%;
+             display: flex;            
+            //  flex-wrap: wrap;
+             flex-direction: row;
+             justify-content: space-between;}
+             
+   @mixin flex { display: flex;
+             flex-direction: column;
+             justify-content: space-between; 
+             align-items: center; 
+              }
+
+   @mixin name {font-family:'Montserrat';
+             font-size: 14px;
+             font-style: normal;
+             font-weight: 700;
+             line-height: 17px;
+             letter-spacing: 0px;
+             text-align: center;}
+    
+    @mixin text {font-family: 'Roboto';
+             font-size: 14px;
+             font-style: normal;
+             font-weight: 300;
+             line-height: 14px;
+             text-align: center;}
+    
+             @mixin img1 {width: 300px;height: 310px;;
+               // background: chartreuse;
+                display: flex;                
+                justify-content: center;
+                align-items: center;              
+                font-family: 'Montserrat';
+                 font-size: 22px;
+                 font-style: normal;
+                 font-weight: 700;
+                 line-height: 27px;
+                 text-align: center;
+                 
+             }
+             @mixin img2 {width:620px;height: 310px;
+               // background-color: chocolate;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-image: url(../style/images/Dreamshare.png);
+                font-family: 'Montserrat';
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 27px;
+                text-align: center;}
+                 
+             @mixin after { content: "" ;
+                           display: block;
+                          width: 32px;
+                          height: 32px;
+                         margin: 3px; 
+                          border-radius: 50%;
+                          position: absolute;
+                          top: 82px;
+                          left: 135px;
+             }
+             @mixin step{width: 70px;
+                        height: 20px;
+                       background-color: $botton-color;
+                       color:$img-color;
+                       border-radius: 40px;
+                       font: {family: 'Montserrat';                      
+                               weight: normal;
+                               size: 10px;}
+                               line-height: 20px; 
+                               text-align: center;                             
+                               letter-spacing: 2px;
+                               text-transform: uppercase;
+                                                                  }
