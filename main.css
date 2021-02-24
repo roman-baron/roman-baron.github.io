@@ -1,18 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300&display=swap");
-* { margin: 0;
+* {
+  margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;}
+          box-sizing: border-box;
+}
 
-
-body { background: #F2F2F2;}
-
+body {
+  background: #F2F2F2;
+}
 
 .content {
   width: 1440px;
   height: 3451px;
-  margin: 0 auto;}
-
+  border: 1px solid #000;
+  margin: 0 auto;
+}
 
 .header {
   width: 100%;
@@ -386,7 +389,7 @@ body { background: #F2F2F2;}
   border-radius: 50%;
   position: absolute;
   top: 82px;
-  left: 135px;
+  left: 140px;
   background-color: #FF4E50;
   background-image: url(./style/images/music.svg);
   background-size: 75%;
@@ -411,7 +414,7 @@ body { background: #F2F2F2;}
   border-radius: 50%;
   position: absolute;
   top: 82px;
-  left: 135px;
+  left: 140px;
   background-image: url(./style/images/pen.svg);
   background-color: #19D4CA;
   background-size: 75%;
@@ -436,7 +439,7 @@ body { background: #F2F2F2;}
   border-radius: 50%;
   position: absolute;
   top: 82px;
-  left: 135px;
+  left: 140px;
   background-image: url(./style/images/camera.svg);
   background-color: #FFA710;
   background-size: 75%;
@@ -461,7 +464,7 @@ body { background: #F2F2F2;}
   border-radius: 50%;
   position: absolute;
   top: 82px;
-  left: 135px;
+  left: 140px;
   background-image: url(./style/images/plane-departure.svg);
   background-color: #667DF3;
   background-size: 75%;
@@ -582,7 +585,8 @@ body { background: #F2F2F2;}
   line-height: 27px;
   text-align: center;
   background-image: url(./style/images/Dreamshare.png);
-  background-position: 1188px 1576px; 
+  background-position: 1188px 1576px;
+  border: 1px solid #000;
   color: #F2F2F2;
 }
 
@@ -895,13 +899,12 @@ body { background: #F2F2F2;}
   background-position: -1080px -3247px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1500px) {
   .content {
     width: 768px;
     height: 3679px;
   }
   .header {
-    height: 700px;
     background-image: url(./style/images/Tablet.png);
   }
   .header__logo {
@@ -943,8 +946,8 @@ body { background: #F2F2F2;}
     height: 77%;
   }
   .blc__person_bl1-1, .blc__person_bl1-2, .blc__person_bl1-3, .blc__person_bl1-4 {
-    height: 59%;
-    width: 51%;
+    height: 120px;
+    width: 120px;
   }
   .blc__person {
     width: 236px;
@@ -967,7 +970,7 @@ body { background: #F2F2F2;}
     width: 63%;
   }
   .footer {
-    width: 768px;
+    width: 100%;
   }
   .compani {
     width: 90%;
@@ -983,15 +986,17 @@ body { background: #F2F2F2;}
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .content {
-    width: 320px;
-    height: 3916px;
+    width: 390px;
+    height: 4197px;
   }
   .header {
-    width: 320px;
+    width: 100%;
     height: 540px;
+    margin: 0 auto;
     background-image: url(./style/images/Mobile_Portrait.png);
+    background-size: cover;
     background-position: -6px 0;
     margin-bottom: 35px;
   }
@@ -1150,7 +1155,6 @@ body { background: #F2F2F2;}
     width: 100%;
   }
   .footer {
-    width: 321px;
     height: 204px;
   }
   .compani__logo {

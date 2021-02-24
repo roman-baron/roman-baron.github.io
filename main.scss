@@ -6,7 +6,7 @@ body{ background: #F2F2F2;}
 
 .content{width: 1440px;
     height: 3451px;
-    // border: 1px solid #000;
+    border: 1px solid #000;
     margin: 0 auto;    
     }
 
@@ -412,13 +412,14 @@ body{ background: #F2F2F2;}
                   background: {image: url(./style/images/Dreamshare.png);
                                position: -1080px -3247px;}
                                    }}
+ 
+                                 
 
-
-
-@media (max-width: 992px)
-{ .content{ width: 768px; height: 3679px; }
-  .header{height: 700px;
-    background-image: url(./style/images/Tablet.png);}
+@media(max-width: 1500px)
+{ .content{ width: 768px; height: 3679px;
+ }
+  .header{
+    background-image: url(./style/images/Tablet.png)}
           .header__logo {
             width: 88%;}
            .header__logo_logo {
@@ -442,8 +443,8 @@ body{ background: #F2F2F2;}
                 font-size: 22px;}
           .blc { height: 77%;}
           .blc__person_bl1-1, .blc__person_bl1-2,.blc__person_bl1-3,.blc__person_bl1-4 {
-            height: 59%;
-            width: 51%;}
+            height: 120px;
+            width: 120px;}
            .blc__person { width: 236px;          
                           height: 44%;}
          
@@ -454,22 +455,28 @@ body{ background: #F2F2F2;}
          .img_culture, .img_relax {width: 492px;}
          .section4 {width: 63%;}
         
-  .footer {width: 768px;}
+  .footer {width: 100%;}
          .compani {
           width: 90%;}
           .compani__comp {margin-left: 120px;}
           .compani__partner {margin-left: 56px;}
           .right {margin-left: 116px;}
-        }
+          }
+
+
+       
         
 
-
-
-@media (max-width: 768px)
-  { .content{ width: 320px; height: 3916px; }
-  .header {width: 320px;
+@media (max-width: 992px)
+  { .content{ width: 390px;height: 4197px;
+   }
+  .header {width: 100%;
     height: 540px;
+    margin: 0 auto;
     background-image: url(./style/images/Mobile_Portrait.png);
+    
+   background-size: cover;
+   
     background-position: -6px 0;
     margin-bottom: 35px;}
 
@@ -600,7 +607,7 @@ body{ background: #F2F2F2;}
                       width: 100%;}
 
                .footer {
-                 width: 321px;
+               
                  height: 204px;}
 
                  .compani__logo {                                
